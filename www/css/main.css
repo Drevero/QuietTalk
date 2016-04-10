@@ -1,0 +1,445 @@
+body {
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	-webkit-highlight: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a {
+	text-decoration: none;
+}
+#login_user_png {
+	display: block;
+	position: relative;
+	margin: auto;
+	height: 100px !important;
+	margin-top: 5%;
+}
+#results_gif div {
+	width: 100%;
+	height: 240px;
+	float: left;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#results_gif div p {
+	display: block;
+	position: relative;
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	top: 60px;
+}
+#or {
+	text-align: center;
+	display: block;
+	position: relative;
+}
+.ui-header {
+	position: fixed !important;
+	width: 100% !important;
+	z-index: 100;
+}
+#send_button {
+	display: block;
+	position: relative;
+	height: 35px !important;
+	float: right;
+	margin-top: -41px !important;
+	margin-right: 0.5% !important;
+}
+#send_button_new {
+	display: block;
+	position: relative;
+	height: 35px !important;
+	float: right;
+	margin-top: -41px !important;
+	margin-right: 0.5% !important;
+}
+#gif_button_search {
+	display: block;
+	position: relative;
+	height: 35px !important;
+	float: right;
+	margin-top: -41px !important;
+	margin-right: 0.5% !important;
+	border-radius: 100%;
+}
+#results_gif {
+	margin-top: 98px;
+}
+#liste_conversations p img:not(.emojione) {
+	display: inline-block;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	float: left;
+}
+#msgs {
+	list-style: none;
+}
+#content_messenger {
+	display: block;
+	position: relative;
+	top: 40px;
+}
+#content_messenger2 {
+	display: block;
+	position: relative;
+	top: 100px;
+	list-style: none !important;
+	padding-left: 52px !important;
+}
+#number_user_panel {
+	text-align: center;
+	font-size: 22px;
+}
+#number_user_panel2 {
+	text-align: center;
+	font-size: 22px;
+}
+#name_user_panel {
+	text-align: center;
+	font-size: 24px;
+}
+#connected_panel {
+	text-align: center;
+	font-size: 18px;
+}
+.msg .sep {
+	margin-top:-25px;
+	min-height:38px;
+	background-image:url('../img/msg-grey-bottom.png');
+	background-position:bottom 0px left 0px;
+	background-repeat:no-repeat;
+	position:relative;
+	margin-left:-5px;
+}
+#user_img {
+	height: 100px;
+	display: block;
+	position: relative;
+	margin: auto;
+}
+.msg.green {
+	background-color:#4fd73b;
+	border-bottom-left-radius:20px;
+	color:#fff;
+	float:right;
+	margin-left:5px;
+	margin-right:-3px;
+	overflow: visible;
+	width: 90%;
+	padding-bottom:0px;
+}		
+.msg.green .sep {
+	width:50px;
+	float: right;
+	background-image:url('../img/msg-green-bottom.png');
+	background-position:bottom 0 right 0px;
+	background-repeat:no-repeat;
+	position:relative;
+	left:7px;
+	z-index: 1;
+}
+#logo_first {
+	height: 100px;
+	opacity: 0.5;
+	top: 10px;
+}
+#emoticon_tool_button {
+	display: block;
+	position: absolute;
+	padding: 2px;
+	border: 1px solid #dadada;
+	border-top: 0px;
+	background: #e9e9e9;
+	height: 35px;
+	top: 53px;
+	border-radius: 0px 0px 15px 0px;
+}
+li.swiperight {
+	background: red !important;
+}
+#refresh {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.read_i0 {
+	display: inline;
+	position: relative;
+	margin-left: 13px;
+	height: 15px;
+	top: 2px;
+}
+.read_msg0 {
+	color: #136aea;
+	font-weight: bold;
+}
+.read_i1 {
+	display: none !important;
+}
+#load_numbe {
+	display: block;
+	position: relative;
+	text-align: center;
+}
+#clean_convers {
+	display: block;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	background: #FFAEAE !important;
+	padding: 10px !important;
+}
+#opt_content .ui-input-text {
+	display: block;
+	position: relative;
+	top: 45px;
+	width: 50%;
+	margin: auto;
+}
+#opt_content p {
+	display: block;
+	position: relative;
+	top: 45px;
+	text-align: center;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 20px;
+}
+#deconnect {
+	display: block;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	background: #FFAEAE !important;
+	padding: 10px !important;
+}
+#options_bt {
+	display: block;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px !important;
+}
+#clean_convers::after {
+	display: inner;
+	content: "";
+	height: 20px;
+	width: 20px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background: url('../img/trash.svg');
+}
+#content_send2 {
+	display: block;
+	position: fixed;
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	padding-bottom: 5px;
+	background: #e9e9e9;
+	top: 43px;
+	width: 100%;
+	z-index: 1000;
+}
+#content_send2 .ui-input-text {
+	display: block;
+	position: relative;
+	border-radius: 0;
+	height: 30px;
+	width: 90%;
+	left: 2%;
+	z-index: 110;
+}
+#content_send3 {
+	display: block;
+	position: fixed;
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	padding-bottom: 5px;
+	background: #e9e9e9;
+	top: 43px;
+	width: 100%;
+	z-index: 1000;
+}
+#content_send3 .ui-input-text {
+	display: block;
+	position: relative;
+	border-radius: 0;
+	height: 30px;
+	width: 90%;
+	left: 2%;
+	z-index: 110;
+}
+#content_send4 {
+	display: block;
+	position: fixed;
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	padding-bottom: 5px;
+	background: #e9e9e9;
+	top: 43px;
+	width: 100%;
+	z-index: 1000;
+}
+#content_send4 .ui-input-text {
+	display: block;
+	position: relative;
+	border-radius: 0;
+	height: 30px;
+	width: 90%;
+	left: 2%;
+	z-index: 110;
+}
+#panel_discu {
+	z-index: 2000;
+}
+#content_send2 input {
+	font-size: 15px;
+}
+.msg .content {
+	font-family: 'Open Sans', sans-serif;
+	font-size:17px;
+	line-height:130%;
+}			
+.msg .content p {
+	padding:0 14px;
+	margin:0;
+	text-shadow: 1px 1px 0 #fff;
+	position:relative;
+	z-index: 2;
+	word-wrap: break-word;
+}
+.msg.green .content p, .msg.blue .content p {
+	text-shadow: 0 0 0;
+}
+.msg {
+	background-color:#e5e5ea;
+	width:90%;
+	border-radius:20px;
+	border-bottom-left-radius:16px;
+	padding:9px 0;
+	margin:5px;
+	margin-left: -42px;
+	margin-bottom: 20px;
+	color:#070707;
+	clear:both;
+	overflow:visible;
+	float:left;
+	padding-top: 12px;
+	padding-bottom:0px;
+	max-width: 500px !important;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+}
+.msg img:not(.emojione) {
+	display: block;
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+.mini {
+	width: 35px !important;
+	height: 35px !important;
+}
+img:not(.emojione) .msg {
+	background: red !important;
+}
+.contact_img_conv {
+	display: inline;
+	height: 55px;
+	margin-top: 3px;
+	margin-left: -10px;
+	margin-right: 15px;
+	float: left;
+}
+#logo_hello {
+	display: block;
+	position: relative;
+	height: 220px;
+	top: 120px;
+	margin: auto;
+}
+#loader_discu {
+	display: block;
+	margin: auto;
+}
+.nv {
+	opacity: 1;
+	margin-right: -150%;
+	margin-top: -150%;
+}
+#gif_button {
+	display: block;
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	border-radius: 0px 0px 20px 0px;
+	background: white;
+	top: 97px;
+	z-index: 1000;
+	border: 1px solid #dadada;
+}
+#logo_giphy {
+	display: block;
+	position: fixed;
+	margin: auto;
+	margin-top: 2px;
+	z-index: 1000;
+	left: 2px;
+	height: 35px;
+	border-radius: 0px 0px 20px 0px;
+}
+.emojione {
+	display: inline-block;
+	height: 20px;
+}
+p .date {
+	color: #6b1e1e !important;
+}
+.date {
+	font-size: 10px;
+	display: inline-block;
+	width: 100%;
+	top: 5px;
+	text-align: right;
+	position: relative;
+}
+#first img {
+	display: block;
+	position: relative;
+	margin: auto !important;
+	margin-top: 20% !important;
+}
+#content_button_inscr {
+	display: block;
+	position: relative;
+	width: 70% !important;
+	margin: auto !important;
+	margin-top: 15% !important;
+}
+#content_button_inscr .ui-btn {
+	display: block;
+	width: 90%;
+}
+#content_button_inscr .ui-input-text {
+	display: block;
+	width: 90%;
+	margin-top: 20px !important;
+}
+.connex .ui-btn {
+	display: block;
+	width: 45% !important;
+	margin: auto;
+	margin-top: 20px !important;
+}

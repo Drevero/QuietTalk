@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script src="js/jquery.js"></script>
+	<meta charset="utf-8"/>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/emojione.js"></script>
+	<script src="js/conv.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script type="application/javascript">
+	window.addEventListener('load', function () {
+		FastClick.attach(document.body);
+	}, false);
+	</script>
+	<style>
+		.noshadow * {
+			-webkit-box-shadow: none !important;
+			-moz-box-shadow: none !important;
+			box-shadow: none !important;
+		}
+		form.ui-mini .ui-field-contain fieldset.ui-controlgroup legend small {
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+<div data-role="page" id="first">
+	<img src="img/logo.png" id="logo_first"/>
+	<img src="img/loader.gif"/>
+	<p id="load_numbe">Chargement de votre compte</p>
+</div>
+<div data-role="page" data-transition="slide" id="connected">
+<div data-role="panel" id="mypanel">
+</div>
+	<div data-role="header">
+		<h1>QuietTalk</h1>
+		<a href="#panel_co" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext"></a>
+		<a href="#new_message" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left ui-btn-icon-notext"></a>
+	</div><!-- /header -->
+	<div data-role="panel" id="panel_co">
+		<img src="img/user.png" id="user_img"/>
+		<p id="number_user_panel">...</p>
+		<p id="connected_panel">Connecté</p>
+		<ul data-role="listview" style="margin-top: 10px;">
+			<li><a href="#options" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-gear ui-btn-icon-right" id="options_bt">Options</a></li>
+			<li><a href="#" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-right" id="deconnect" onclick="deconnect();">Déconnexion</a></li>
+		</ul>
+	</div>
+	<div class="ui-content" id="content_messenger" role="main">
+		<ul data-role="listview" id="liste_conversations">
+			<a href="#" onclick="recup_conv();">Rafraîchir</a>
+		</ul>
+	</div>
+</div>
+<div data-role="page" data-transition="slide" id="messages">
+	<div data-role="header">
+		<h1 id="name"></h1>
+		<a href="#" data-rel="back" data-transition="slide" onclick="recup_conv();erase_conv();" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Retour</a>
+		<a href="#panel_discu" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Retour</a>
+	</div><!-- /header -->
+	<div data-role="panel" id="panel_discu" data-display="overlay">
+		<img src="img/user.png" id="user_img"/>
+		<p id="name_user_panel">...</p>
+		<p id="number_user_panel2">...</p>
+		<ul data-role="listview" style="margin-top: 10px;">
+			<li><a href="#" id="clean_convers" data-transition="slide" onclick="delete_conv();">Supprimer la conversation</a></li>
+		</ul>
+	</div><!-- /header -->
+	<div id="content_send2">
+		<input type="text" placeholder="Votre message ici ..." id="message_input"/><a href="#" id="send_button_true"><img id="send_button" src="img/send.png"/></a>
+	</div>
+	<div id="gif_button">
+		<a href="#gif_search" onclick="gif_init();"><img src="img/giphy.png" id="logo_giphy"/></a>
+	</div>
+	<div class="ui-content" id="content_messenger2" role="main">
+		<ul id="msgs" class="touch" data-role="listview" data-icon="false" data-split-icon="delete">
+		</ul>
+	</div>
+</div>
+<div data-role="page" data-transition="slide" id="new_message">
+	<div data-role="header">
+		<h1>Nouveau message</h1>
+		<a href="#" data-rel="back" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Retour</a>
+	</div><!-- /header -->
+	<div id="content_send3">
+		<input type="text" placeholder="Numéro du destinataire" id="num_new_msg"/>
+		<input type="text" placeholder="Votre message ici ..." id="message_input_new"/><a href="#" id="send_button_true_new"><img id="send_button_new" onclick="send_msg_new();" src="img/send.png"/></a>
+	</div>
+</div>
+<div data-role="page" data-transition="slide" id="gif_search">
+	<div data-role="header">
+		<h1>Recherche de Gifs avec Giphy</h1>
+		<a href="#" data-rel="back" data-transition="slide" onclick="gif_leave();" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Retour</a>
+	</div><!-- /header -->
+	<div id="content_send4">
+		<input type="text" placeholder="Mot-clé GIFs" id="gif_input"/><a href="#"><img id="gif_button_search" onclick="search_gif();" src="img/loupe.png"/></a>
+	</div>
+	<div id="results_gif">
+	</div>
+</div>
+<div data-role="page" data-transition="slide" id="options">
+	<div data-role="header">
+		<h1>Options</h1>
+		<a href="#" data-rel="back" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Retour</a>
+	</div><!-- /header -->
+	<div id="opt_content">
+		<p>Changer le fond des conversations : </p><input type="file" id="fond_file" accept="image/*" onchange="visual_fond();"/>
+		<img id="img_preview" src=""/>
+	</div>
+</div>
+</html>
