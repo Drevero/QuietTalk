@@ -122,7 +122,7 @@ a {
 	margin: auto;
 }
 .msg.green {
-	background-color:#4fd73b;
+	background-color:#0f87ff;
 	border-bottom-left-radius:20px;
 	color:#fff;
 	float:right;
@@ -301,7 +301,7 @@ li.swiperight {
 }
 .msg .content {
 	font-family: 'Open Sans', sans-serif;
-	font-size:17px;
+	font-size:15.5px;
 	line-height:130%;
 }			
 .msg .content p {
@@ -316,7 +316,7 @@ li.swiperight {
 	text-shadow: 0 0 0;
 }
 .msg {
-	background-color:#e5e5ea;
+	background-color:#e6e5eb;
 	width:90%;
 	border-radius:20px;
 	border-bottom-left-radius:16px;
