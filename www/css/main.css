@@ -175,9 +175,9 @@ a {
 	margin-left:5px;
 	margin-right:-3px;
 	overflow: visible;
-	width: 90%;
+	width: 95%;
 	padding-bottom:0px;
-}		
+}
 .msg.green .sep {
 	width:50px;
 	float: right;
@@ -255,6 +255,28 @@ li.swiperight {
 	color: black;
 	margin-bottom: 20px;
 }
+#logo_about {
+	display: block;
+	position: relative;
+	height: 150px;
+	margin: auto;
+	margin-top: 102px;
+}
+#title_about {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 21px;
+	top: 20px;
+}
+#developers_about {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+	font-weight: italic;
+	top: 20px;
+}
 #deconnect {
 	display: block;
 	position: relative;
@@ -264,6 +286,13 @@ li.swiperight {
 	padding: 10px !important;
 }
 #options_bt {
+	display: block;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px !important;
+}
+#about_bt {
 	display: block;
 	position: relative;
 	font-size: 12px;
@@ -363,7 +392,7 @@ li.swiperight {
 }
 .msg {
 	background-color:#e6e5eb;
-	width:90%;
+	width: 95%;
 	border-radius:20px;
 	border-bottom-left-radius:16px;
 	padding:9px 0;
@@ -376,7 +405,7 @@ li.swiperight {
 	float:left;
 	padding-top: 12px;
 	padding-bottom:0px;
-	max-width: 500px !important;
+	max-width: 600px !important;
 	-moz-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
@@ -387,6 +416,23 @@ li.swiperight {
 	-moz-transform: translate3d(0,0,0);
 	-o-transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
+}
+.msg:first-child {
+	-webkit-animation-duration: 0.9s;
+	animation-duration: 0.9s;
+	-webkit-animation-name: create;
+	animation-name: create;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+@keyframes create {
+  from {
+    transform: translate3d(0px, -200px, 0);
+  }
+  
+  to {
+    transform: translate3d(0px, 0, 0);
+  }
 }
 .msg img:not(.emojione) {
 	display: block;

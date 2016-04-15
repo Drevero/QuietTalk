@@ -304,7 +304,6 @@ function send_message(id)
 				pa.insertBefore(li, pa.firstChild);
 				document.getElementById('message_input').value='';
 				document.getElementById('content_messenger2').scrollTo(0, -1);
-				anim_msg(rando, 0);
 			}
 		};
 		xhr.open('POST', url_server + '/api.php', true);
@@ -371,21 +370,6 @@ function add_gif(url)
 	document.getElementById('gif_input').value='';
 	document.getElementById('results_gif').innerHTML='';
 	window.history.back();
-}
-function anim_msg(id, sec)
-{
-	clearTimeout(timing_act);
-	if(sec<=1)
-	{
-		sec=sec+0.5;
-		document.getElementById(id).style.marginTop=sec + '%';
-		setTimeout('anim_msg(' + id + ', ' + sec + ')', 100);
-	}
-	else
-	{
-		sec=0;
-		timing_act=setTimeout('load_discus(' + discu_act + ')', 2500);
-	}
 }
 function erase_conv()
 {

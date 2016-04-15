@@ -45,6 +45,7 @@
 		<p id="number_user_panel">...</p>
 		<p id="connected_panel">Connecté</p>
 		<ul data-role="listview" style="margin-top: 10px;">
+			<li><a href="#about" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-right" id="about_bt">A propos</a></li>
 			<li><a href="#options" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-gear ui-btn-icon-right" id="options_bt">Options</a></li>
 			<li><a href="#" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-right" id="deconnect" onclick="deconnect();">Déconnexion</a></li>
 		</ul>
@@ -109,6 +110,17 @@
 	<div id="opt_content">
 		<p>Changer le fond des conversations : </p><input type="file" id="fond_file" accept="image/*" onchange="visual_fond();"/>
 		<img id="img_preview" src=""/>
+	</div>
+</div>
+<div data-role="page" data-transition="slide" id="about">
+	<div data-role="header">
+		<h1>A propos</h1>
+		<a href="#" data-rel="back" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Retour</a>
+	</div><!-- /header -->
+	<div id="about_content">
+		<img src="img/logo.png" id="logo_about"/>
+		<p id="title_about">QuietTalk (beta 1.7)</p>
+		<p id="developers_about">Developpé et maintenu par Drevero.</p>
 	</div>
 </div>
 </html>
