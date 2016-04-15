@@ -8,6 +8,52 @@ body {
 a {
 	text-decoration: none;
 }
+.disconnected_logo {
+	display: block;
+	position: relative;
+	margin: auto;
+	width: 150px;
+	opacity: 0.5;
+	margin-top: 300px;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-name: faded;
+	animation-name: faded;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
+@keyframes faded {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+.no_network {
+	display: none;
+	position: fixed;
+	height: 31px;
+	left: 0px;
+	width: 100%;
+	z-index: 1000;
+	background: #ff2626;
+	top: 45px;
+	border-bottom: 1px solid #ff2626;
+}
+.no_network p {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	text-shadow: none;
+	top: -7px;
+}
 #login_user_png {
 	display: block;
 	position: relative;
