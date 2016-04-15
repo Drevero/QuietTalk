@@ -11,6 +11,7 @@ var nmb_msg_actu=0;
 var timing_recup_conv;
 var network_try=0; 
 var init_try;
+var middle_screen=screen.height/2;
 $(document).on( "swiperight", "#messages", function( event ) {
 	erase_conv();
 	recup_conv();
@@ -89,7 +90,7 @@ function init_messenger()
 		clearTimeout(init_try);
 		network_try=5;
 		document.getElementsByClassName('no_network')[0].style.display='block';
-		document.getElementById('liste_conversations').innerHTML='<img src="img/disconnected.png" class="disconnected_logo"/>';
+		document.getElementById('liste_conversations').innerHTML='<img src="img/disconnected.png" class="disconnected_logo" style="margin-top: ' + (middle_screen-150) + 'px;"/>';
 		window.location='conversation.html#connected';
 	}
 }
