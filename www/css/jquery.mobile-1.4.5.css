@@ -836,21 +836,6 @@ label.ui-btn {
 }
 /* Shadow
 -----------------------------------------------------------------------------------------------------------*/
-.ui-shadow {
-	-webkit-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
-	-moz-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
-	box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
-}
-.ui-shadow-inset {
-	-webkit-box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ 	rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-	-moz-box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-	box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ 	rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-}
-.ui-overlay-shadow {
-	-webkit-box-shadow: 0 0 12px 		rgba(0,0,0,.6);
-	-moz-box-shadow: 0 0 12px 			rgba(0,0,0,.6);
-	box-shadow: 0 0 12px 				rgba(0,0,0,.6);
-}
 /* Icons
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-icon-left:after,
@@ -881,12 +866,7 @@ html .ui-alt-icon .ui-radio-off:after {
 	background-color: transparent;
 }
 /* Icon shadow */
-.ui-shadow-icon.ui-btn:after,
-.ui-shadow-icon .ui-btn:after {
-	-webkit-box-shadow: 0 1px 0 			rgba(255,255,255,.3) /*{global-icon-shadow}*/;
-	-moz-box-shadow: 0 1px 0 				rgba(255,255,255,.3) /*{global-icon-shadow}*/;
-	box-shadow: 0 1px 0 					rgba(255,255,255,.3) /*{global-icon-shadow}*/;
-}
+
 /* Checkbox and radio */
 .ui-btn.ui-checkbox-off:after,
 .ui-btn.ui-checkbox-on:after,
@@ -1087,9 +1067,6 @@ html .ui-body-a .ui-focus,
 html body .ui-group-theme-a .ui-focus,
 html head + body .ui-btn-a.ui-focus,
 html head + body .ui-body-a.ui-focus {
-	-webkit-box-shadow: 0 0 12px 	#3388cc /*{a-active-background-color}*/;
-	-moz-box-shadow: 0 0 12px 		#3388cc /*{a-active-background-color}*/;
-	box-shadow: 0 0 12px 			#3388cc /*{a-active-background-color}*/;
 }
 /* B
 -----------------------------------------------------------------------------------------------------------*/
@@ -1249,9 +1226,6 @@ html .ui-body-b .ui-focus,
 html body .ui-group-theme-b .ui-focus,
 html head + body .ui-btn-b.ui-focus,
 html head + body .ui-body-b.ui-focus {
-	-webkit-box-shadow: 0 0 12px 	#22aadd /*{b-active-background-color}*/;
-	-moz-box-shadow: 0 0 12px 		#22aadd /*{b-active-background-color}*/;
-	box-shadow: 0 0 12px 			#22aadd /*{b-active-background-color}*/;
 }
 /* Structure */
 /* Disabled
@@ -1396,7 +1370,6 @@ div.ui-mobile-viewport {
 	width: 12.5em;
 	filter: Alpha(Opacity=88);
 	opacity: .88;
-	box-shadow: 0 1px 1px -1px #fff;
 	height: auto;
 	margin-left: -6.875em;
 	margin-top: -2.6875em;
@@ -2348,11 +2321,8 @@ button.ui-btn-icon-notext,
 /* flow transition */
 .flow {
 	-webkit-transform-origin: 50% 30%;
-	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
 	-moz-transform-origin: 50% 30%;	
-	-moz-box-shadow: 0 0 20px rgba(0,0,0,.4);
 	transform-origin: 50% 30%;	
-	box-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 .ui-dialog.flow {
 	-webkit-transform-origin: none;
@@ -4659,24 +4629,12 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 }
 /* Shadows and borders */
 .ui-panel-display-reveal {
-	-webkit-box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
-	box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
 }
 .ui-panel-position-right.ui-panel-display-reveal {
-	-webkit-box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
-	box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
 }
 .ui-panel-display-overlay {
-	-webkit-box-shadow: 5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: 5px 0 5px rgba(0,0,0,.15);
-	box-shadow: 5px 0 5px rgba(0,0,0,.15);
 }
 .ui-panel-position-right.ui-panel-display-overlay {
-	-webkit-box-shadow: -5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: -5px 0 5px rgba(0,0,0,.15);
-	box-shadow: -5px 0 5px rgba(0,0,0,.15);
 }
 .ui-panel-open.ui-panel-position-left.ui-panel-display-push {
 	border-right-width: 1px;

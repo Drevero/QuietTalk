@@ -282,7 +282,8 @@ function send_message(id)
 	}
 	else
 	{
-		var message=gif_url;
+		var temp_msg=document.getElementById('message_input').value;
+		var message=temp_msg + ' ' + gif_url;
 	}
 	if(message.length>0)
 	{

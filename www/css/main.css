@@ -41,7 +41,7 @@ a {
 	width: 100%;
 	z-index: 1000;
 	background: #ff2626;
-	top: 45px;
+	top: 43px;
 	border-bottom: 1px solid #ff2626;
 }
 .no_network p {
@@ -416,6 +416,14 @@ li.swiperight {
 	-moz-transform: translate3d(0,0,0);
 	-o-transform: translate3d(0,0,0);
 	-ms-transform: translate3d(0,0,0);
+}
+.ui-input-text input,
+.ui-input-search input {
+	border-left: 0px solid #005bb6;
+}
+#panel_co {
+	border-right: 1px solid #dddddd;
+	margin-left: -1px;
 }
 .msg:first-child {
 	-webkit-animation-duration: 0.9s;
