@@ -8,32 +8,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <style>
-	#slider {
-	  display: block;
-	  position: relative;
-	  height: 330px;
-	  overflow: hidden;
-	  margin: auto;
-	  width: 600px;
-	  box-shadow: 0px 5px 25px black;
-	}
-	#slider_p {
-	  display: block;
-	  position: absolute;
-	  top: 266px;
-	  color: grey;
-	  padding: 13px;
-	  border: 1px solid white;
-	  background: #fefefe;
-	}
-	#slider_img {
-	  display: block;
-	  position: absolute;
-	  transition: all 1s ease-in-out;
-	  width: 100%;
-	}
-	</style>
   </head>
   <body>
     <section class="page-header">
@@ -44,10 +18,7 @@
       <a href="https://github.com/Drevero/QuietTalk/blob/master/last.apk?raw=true" style="background-image: url('http://www.canon.fr/Images/Android-logo_tcm79-1232684.png');background-size: 25%;background-repeat: no-repeat;" class="btn">Télécharger pour Android (.apk)</a>
       <a href="screen.html" class="btn">Captures d'écran</a>
 		<p><br /><br /></p>
-      <div id="slider">
-	  <img src="http://drevero.github.io/QuietTalk/cssslider_files/csss_images1/anonymous_wallpaper__negative__by_omni23d4jaw3a.png" id="slider_img"/>
-	  <p id="slider_p">Vos messages sont cryptés et votre numéro reste anonyme</p>
-	  </div>
+	<iframe width="660" height="415" src="https://www.youtube.com/embed/2WEVzT27-9M" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <section class="main-content">
@@ -76,29 +47,6 @@
     </section>
 
 <script>
-var img_array=['http://drevero.github.io/QuietTalk/1.jpg', 'http://drevero.github.io/QuietTalk/2.jpg', 'http://drevero.github.io/QuietTalk/3.png', 'http://drevero.github.io/QuietTalk/4.jpg'];
-var text_array=['Agrémentez vos messages d\'émoticones et GIFS en tout genre', 'Soyez fier d\'utiliser un service 100% web et mobile !', 'Vos messages sont cryptés et votre numéro reste anonyme', 'Vous pouvez à tout moment changer de serveur, pour en trouver un plus rapide par exemple !'];
-var img_act=0;
-var slider_1=document.getElementById('slider_img');
-var text_slider=document.getElementById('slider_p');
-var slider_bool=false;
-function init_slider()
-{
-	if(img_act<img_array.length)
-	{
-	  slider_1.src=img_array[img_act];
-	  text_slider.innerHTML=text_array[img_act];
-	  img_act+=1;
-	 }
-	 else
-	 {
-		 img_act=0;
-		 slider_1.src=img_array[img_act];
-	     text_slider.innerHTML=text_array[img_act];
-	 }
-  setTimeout('init_slider()', 4500);
-}
-init_slider();
 </script>
   </body>
 </html>
